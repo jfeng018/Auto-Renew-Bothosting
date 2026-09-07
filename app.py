@@ -122,6 +122,7 @@ def format_notification(status: str, extra: str = "", error: str = "", expiry_da
     if error:
         lines.append(f"⚠️ 错误信息: {error}")
     lines.append(f"⏱️ 登录时间: {now}")
+    lines.append(f"🔗 账单页面: https://bot-hosting.net/a/billings")
     return "\n".join(lines)
 
 # 等待Turnstile验证通过
