@@ -2,6 +2,7 @@ name: Auto Renew Bot-hosting
 
 on:
   schedule:
+    - cron: '0 1 * * *'   # 每天UTC 01:00 (北京时间09:00, 补充触发)
     - cron: '30 11 * * *' # 每天UTC 11:30 (北京时间19:30, 续期窗口约19:01解锁,留约30分钟余量;宽限期3天,晚点无损失)
   workflow_dispatch:
 
